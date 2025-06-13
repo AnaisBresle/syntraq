@@ -24,24 +24,29 @@ body {
 --half: 50vw;
 --third: 31vw;
 --quarter: 21vw;
+--small: 18vw;
 
 /* spacing*/  
 --sXl: 3rem;
 --sl: 2rem;
 --sm: 1rem;
---ss: 0.75ren;
+--ss: 0.5ren;
 --sxs: 0.25rem;
 
 /* text-size */  
 --tXl: 3rem;
 --tl: 2rem;
---tm:1.5rem;
---ts:0.85ren;
+--tm:1rem;
+--ts:0.80ren;
 --txs:0.7rem;
 
 }
 
 /* Boxes sizes */
+
+.largebox {
+ width: var(--large);
+}
 
 .boxhalf {
 width: var(--half);
@@ -55,8 +60,8 @@ width:var(--third)
 width:var(--quarter)
 }
 
-.largebox {
- width: var(--large);
+.smallbox {
+    width: var(--quarter);
 }
 
 
@@ -128,11 +133,18 @@ footer .logo img {
 
 .topnav {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: flex-end;
   align-items: center;
-  gap: var(--sxs); 
+  
  
+}
+
+.topnav ul {
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+  gap: var(--sxs);
+  
 }
 
 
@@ -148,17 +160,18 @@ padding:var(--ss)
 button {
 border-radius: 5%;   
 border: 0;
-padding: var(--sm) var(--sm);
+padding: var(--sm);
 font-weight: 600;
-font-size: var(--tm);
+font-size: var(--ts);
 text-align: center;
+line-height: 1.2;
 
 }
  
 
 nav button, footer button {
 width: auto;
-max-width: 150px;
+max-width: 200px;
 margin-left:2%;
 
 }
@@ -166,8 +179,7 @@ margin-left:2%;
 button a {
   display: block;
   width: 100%;
-  text-align: center;
-  padding: 0;
+  
 }
 
 
@@ -204,7 +216,7 @@ list-style: none;
 
 a {
 text-decoration: none;  
-padding: var(--sm); 
+padding: var(--sm) 0; 
 
 }
 
