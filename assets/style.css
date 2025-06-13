@@ -92,6 +92,11 @@ align-items: center;
 padding: var(--sm) 0;  
 }
 
+.sxl-spacing {
+padding: var(--sXl) 0;  
+}
+
+
 
 /* Header Section */
 
@@ -129,7 +134,6 @@ footer .logo img {
   padding-left: 0;
   
 }
-
 
 .topnav {
   display: flex;
@@ -199,18 +203,25 @@ footer {
     width: var(--full);
 }
 
-.menu {
-display: flex;
-  justify-content: right;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: var(--sxs); 
-}
-
 footer li {
 list-style: none;
 
 }
+
+.menu {
+display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  
+}
+
+.column {
+display: flex;
+flex-direction: column;
+padding: 0;
+}
+
 
 /* Links */
 
