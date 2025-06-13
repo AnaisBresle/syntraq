@@ -1,0 +1,189 @@
+* {
+font-size: 1rem;
+margin: 0;
+box-sizing: border-box;
+
+}
+
+body {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+:root {
+
+/* Colour palette */
+    --primary: rgb(232, 23, 23);
+    --secondary: #48db23;
+    --offwhite: #fefefe;
+    --dark: #1d1c1c;
+    --accent: purple;
+
+ /* witdh */   
+--full: 100vw;
+--large: 80vw ;
+--half: 50vw;
+--third: 31vw;
+--quarter: 21vw;
+
+/* spacing*/  
+--sXl: 3rem;
+--sl: 2rem;
+--sm: 1.2rem;
+--ss: 0.75ren;
+--sxs: 0.25rem;
+
+/* text-size */  
+--tXl: 3rem;
+--tl: 2rem;
+--tm:1.5rem;
+--ts:0.85ren;
+--txs:0.7rem;
+
+}
+
+.boxhalf {
+width: var(--half);
+}
+
+.boxthird {
+width:var(--third)
+}
+
+.boxquarter {
+width:var(--quarter)
+}
+
+
+
+header {
+background-color: var(--primary);
+width: var(--full);
+}
+
+nav { 
+display:flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+position: sticky;
+top:0;
+padding: var(--sm);
+color: var(--offwhite);
+  
+}
+
+
+.logo {
+  padding-left: 0;
+  }
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+  display: block; 
+}
+
+
+.topnav {
+  display: flex;
+  justify-content: right;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--sxs); 
+ 
+}
+
+
+.topnav li {
+list-style: none;
+background-color: aqua;
+padding:var(--ss)
+}
+
+
+button {
+border-radius: 5%;   
+border: 0;
+padding: var(--ss) var(--sm);
+font-weight: 900;
+font-size: var(--tm);
+text-align: center;
+padding: var(--sm)
+}
+ 
+
+nav button {
+width: 100%;
+max-width: 150px;
+margin-left:2%;
+
+}
+
+.cta {
+background-color: var(--secondary);
+text-align: center;
+
+}
+
+
+
+
+footer li {
+list-style: none;
+
+}
+
+footer {
+    background-color: var(--dark);
+    color: var(--offwhite);
+    
+}
+
+.smallcopy {
+    font-size: var(--ts);    
+}
+
+.xsmallcopy {
+    font-size: var(--txs);    
+}
+
+
+
+a {
+text-decoration: none;  
+padding: var(--sm); 
+
+}
+
+
+.menu a {
+color: var(--accent) 
+}
+
+.cta a {
+color: var(--offwhite);
+text-align: center;
+padding:0;
+}
+
+.legal a {
+text-decoration:underline;
+color: var(--offwhite)     
+}
+
+.sm-spacing {
+padding: var(--sm) 0;  
+}
+
+
+
+
+personas
+left
+middle
+right
+howitworks
+centerbox 
+form
+2boxes
+container-large
