@@ -28,7 +28,7 @@ body {
 /* spacing*/  
 --sXl: 3rem;
 --sl: 2rem;
---sm: 1.2rem;
+--sm: 1rem;
 --ss: 0.75ren;
 --sxs: 0.25rem;
 
@@ -40,6 +40,8 @@ body {
 --txs:0.7rem;
 
 }
+
+/* Boxes sizes */
 
 .boxhalf {
 width: var(--half);
@@ -53,7 +55,40 @@ width:var(--third)
 width:var(--quarter)
 }
 
+.largebox {
+ width: var(--large);
+}
 
+
+
+.flexcontainer {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+}
+
+
+
+/* Text sizes */
+
+.smallcopy {
+    font-size: var(--ts);    
+}
+
+.xsmallcopy {
+    font-size: var(--txs);    
+}
+
+
+/* Breathing spacing */
+
+.sm-spacing {
+padding: var(--sm) 0;  
+}
+
+
+/* Header Section */
 
 header {
 background-color: var(--primary);
@@ -63,7 +98,7 @@ width: var(--full);
 nav { 
 display:flex;
 flex-direction: row;
-justify-content: space-around;
+justify-content: space-between;
 align-items: center;
 position: sticky;
 top:0;
@@ -78,15 +113,22 @@ color: var(--offwhite);
   }
 
 .logo img {
-  max-width: 100%;
+  max-width: 250px;
   height: auto;
   display: block; 
+}
+
+footer .logo img {
+    max-width: 150px;
+  height: auto;
+  padding-left: 0;
+  
 }
 
 
 .topnav {
   display: flex;
-  justify-content: right;
+  justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
   gap: var(--sxs); 
@@ -101,23 +143,33 @@ padding:var(--ss)
 }
 
 
+
+/* Buttons */
 button {
 border-radius: 5%;   
 border: 0;
-padding: var(--ss) var(--sm);
-font-weight: 900;
+padding: var(--sm) var(--sm);
+font-weight: 600;
 font-size: var(--tm);
 text-align: center;
-padding: var(--sm)
+
 }
  
 
-nav button {
-width: 100%;
+nav button, footer button {
+width: auto;
 max-width: 150px;
 margin-left:2%;
 
 }
+
+button a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+}
+
 
 .cta {
 background-color: var(--secondary);
@@ -128,26 +180,27 @@ text-align: center;
 
 
 
+/*Footer section */
+footer {
+    background-color: var(--dark);
+    color: var(--offwhite);
+    width: var(--full);
+}
+
+.menu {
+display: flex;
+  justify-content: right;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--sxs); 
+}
+
 footer li {
 list-style: none;
 
 }
 
-footer {
-    background-color: var(--dark);
-    color: var(--offwhite);
-    
-}
-
-.smallcopy {
-    font-size: var(--ts);    
-}
-
-.xsmallcopy {
-    font-size: var(--txs);    
-}
-
-
+/* Links */
 
 a {
 text-decoration: none;  
@@ -157,7 +210,8 @@ padding: var(--sm);
 
 
 .menu a {
-color: var(--accent) 
+color: var(--accent);
+font-size: var(--ts); 
 }
 
 .cta a {
@@ -171,9 +225,6 @@ text-decoration:underline;
 color: var(--offwhite)     
 }
 
-.sm-spacing {
-padding: var(--sm) 0;  
-}
 
 
 
