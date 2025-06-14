@@ -330,17 +330,12 @@ button a {
     padding-bottom: var(--sm);
 }
 
-.left{
+.left, .right{
     border: 1px solid;
-    
-}
-
-.right{
-    border: 1px solid;
-    
-     display:flex;
+    display:flex;
     flex-direction: column;
-
+    justify-content: start;
+    min-height: 25vw;
 }
 
 
