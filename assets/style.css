@@ -65,7 +65,7 @@ h2 {
     padding: var(--sm) 0;
 }
 
-.center{
+.center {
     margin: auto;
     text-align: center;
 }
@@ -193,7 +193,7 @@ nav {
     display: block;
     text-align: center;
     color: var(--offwhite);
-    margin: auto;   
+    margin: auto;
 }
 
 #hero h1 {
@@ -273,31 +273,31 @@ button a {
 
 
 .howitworks {
-     background-color: aquamarine;
+    background-color: aquamarine;
 }
 
 .threeboxes {
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-around;
+    justify-content: space-around;
     padding: var(--sl);
 }
 
 .box {
     border: 1px solid;
     text-align: center;
-    width: 100%;        
-  max-width: 20vw;     
-  min-width: 15vw;
-    margin:var(--sm);
+    width: 100%;
+    max-width: 20vw;
+    min-width: 15vw;
+    margin: var(--sm);
     min-height: 28vh;
     height: auto;
     padding: var(--sm);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;  
-    word-wrap: break-word;    
+    align-items: center;
+    word-wrap: break-word;
 
 }
 
@@ -340,6 +340,15 @@ a {
 
 }
 
+.box a::after {
+    padding-left: 5px;
+    content: "\f105";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    font-size: 1rem;
+    vertical-align: middle;
+
+}
 
 .menu a {
     color: var(--offwhite);
@@ -363,4 +372,4 @@ a {
 
 
 
-left middle right  centerbox form 2boxes 
+left middle right centerbox form 2boxes
