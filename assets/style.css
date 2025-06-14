@@ -65,6 +65,12 @@ h2 {
     padding: var(--sm) 0;
 }
 
+h4 {
+    font-size: var(--ts);
+    padding: var(--ss) 0;
+    text-align: left;
+}
+
 .center {
     margin: auto;
     text-align: center;
@@ -276,14 +282,14 @@ button a {
     background-color: aquamarine;
 }
 
-.threeboxes {
+.boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: var(--sl);
 }
 
-.box {
+.threeboxes {
     border: 1px solid;
     text-align: center;
     width: 100%;
@@ -300,6 +306,29 @@ button a {
     word-wrap: break-word;
 
 }
+
+.insights {
+   background-color: #ff7fff; 
+}
+
+.twoboxes {
+    border: 1px solid;
+    text-align: left;
+    width: 100%;
+    padding: var(--sm);
+    margin: 0 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    word-wrap: break-word;
+}
+
+.twoboxes img {
+    width: 100%;
+}
+
+
 
 
 
