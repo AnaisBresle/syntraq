@@ -93,27 +93,29 @@
     <section class="sxl-spacing-top largebox signup">
     <h1>Ready to end project chaos?</h1>
       <p class="center">Join the Syntrac early access list and be among the first to try our no-BS project accountability platform.</p> 
-      <form action="" method="post" class="center sxl-spacing-top">
-        <input type="email" id="email" name="email" autocomplete="on" placeholder="Your email address *"><br />
-        <input type="text" id="name" name="name" placeholder="Your name *"><br />
+      <form action="#####" method="post" class="center sxl-spacing-top">
+        <input type="email" id="email" name="email" autocomplete="on" placeholder="Your email address *" required><br />
+        <input type="text" id="name" name="name" placeholder="Your name *" required><br />
         <input type="text" id="company" name="company" placeholder="Company name"><br />
         <textarea name="painpoint" id="paintpoint" placeholder="What is you biggest cross-team collaboration headache?"></textarea><br />
-        <label for="select">Which software/apps do you use? <br />(Hold CTRL to select multiple.) </label>
-        <br /><select id="apps" name="apps" size="6" multiple>
+        <label for="select" class="select">Which software/apps do you use? <br />(Hold CTRL to select multiple.) </label>
+        <br /><select id="apps" name="apps" size="6" multiple required>
     <option value="Asana">Asana</option>
     <option value="Monday.com">Monday.com</option>
     <option value="Jira">Jira</option>
+    <option value="ClickUp">ClickUp</option>
     <option value="Trello">Trello</option>
     <option value="Excel/Google Sheets">Excel/Google Sheets</option>
     <option value="Slack">Slack</option>
     <option value="MSTeams">MSTeams</option>
-  </select><br />
+    <option value="Other">Other</option>
+  </select>
   
-        <input type="submit" value="Sign in">
+        <button type="submit" value="Sign in" class="cta">Sign me up</button>
 
 
       </form>
-      <p class="italic notes">Get early updates, sneak peeks, and priority access when we open our private beta. Tell us your top headaches—you'll help shape the product!</p>
+      <p class="italic notes center">Get early updates, sneak peeks, and priority access when we open our private beta. Tell us your top headaches—you'll help shape the product!</p>
     </section>
 
     <section class="insights sxl-spacing-top largebox">

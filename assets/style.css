@@ -71,7 +71,7 @@ h2 {
 }
 
 .subheading {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
 }
 
 article {
@@ -97,7 +97,8 @@ border: 1px solid green;
 }
 
 .notes {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+    padding: var(--sm);
 }
 
 
@@ -145,7 +146,7 @@ border: 1px solid green;
 }
 
 .biggercopy {
-    font-size: var(--tm);
+    font-size: var(--tl);
     font-weight: 500;
     line-height: 1.8;
     padding: var(--sm)
@@ -168,8 +169,6 @@ border: 1px solid green;
 .sm-spacing-side {
     padding: 0 var(--sm);
 }
-
-
 
 
 /* Header Section */
@@ -197,8 +196,6 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-
-
 }
 
 .topnav ul {
@@ -225,7 +222,7 @@ nav {
 }
 
 #hero h1 {
-    font-size: var(--txl);
+    font-size: 3.5rem;
     padding: var(--sl);
 
 }
@@ -272,6 +269,11 @@ footer button {
 
 }
 
+form button {
+    width: 15%;
+    max-width:30%;
+    margin: var(--sm) auto;
+}
 
 .cta {
     background-color: var(--secondary);
@@ -358,7 +360,7 @@ footer button {
 /* Forms */
 
 .signup {
-background-color: #48db23;
+background-color: #23cfdb;
 padding: var(--sm);
 }
 
@@ -383,11 +385,14 @@ textarea {
     min-height: 80px;
 }
 
-label {
+label .select {
     font-size: 0.95rem;
     width: 100%;
     text-align: left;
+    padding: var(--sm) 0;
 }
+
+
 /*Footer section */
 footer {
     background-color: var(--dark);
