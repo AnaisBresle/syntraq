@@ -340,7 +340,7 @@ a {
 
 }
 
-.box a::after {
+.arrow::after {
     padding-left: 5px;
     content: "\f105";
     font-family: "Font Awesome 6 Free";
