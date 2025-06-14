@@ -7,7 +7,7 @@
     --dark: #1d1c1c;
     --accent: purple;
 
-    /* witdh */
+    /* width */
     --full: 100vw;
     --large: 80vw;
     --half: 50vw;
@@ -83,6 +83,15 @@ article p, a, h4 {
 font-size: 0.95rem;
 padding: var(--ss) 0;
     text-align: left;
+}
+
+hr {
+border: 1px solid green;
+  border-radius: 5px;
+    width: 90%;
+    margin: 8px auto;
+   
+    
 }
 
 /* Containers & Boxes sizes */
@@ -189,6 +198,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     gap: var(--sxs);
 
 }
@@ -241,6 +251,8 @@ button {
     font-size: var(--ts);
     text-align: center;
     line-height: 1.2;
+    display: block;
+    width: 100%;
 
 }
 
@@ -250,12 +262,6 @@ footer button {
     width: auto;
     max-width: 200px;
     margin-left: 2%;
-
-}
-
-button a {
-    display: block;
-    width: 100%;
 
 }
 
@@ -290,16 +296,16 @@ button a {
 .boxes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     padding: var(--sl);
+    justify-content:center;
 }
 
 .threeboxes {
     border: 1px solid;
     text-align: center;
     width: 100%;
-    max-width: 20vw;
-    min-width: 15vw;
+    max-width: 300px;
+    min-width: 250px;
     margin: var(--sm);
     min-height: 28vh;
     height: auto;
@@ -320,9 +326,9 @@ button a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: start;
-    min-height: 40vh;
-    height: auto;    
+    align-items: center;
+    margin: 0 auto;
+     
    }
 
 .twoboxes img {
@@ -335,7 +341,11 @@ button a {
     display:flex;
     flex-direction: column;
     justify-content: start;
-    min-height: 25vw;
+    align-items: center;
+    min-height: 40vh;
+    max-width: 400px;
+    min-width: 250px;
+    margin:0 var(--ss);
 }
 
 
@@ -363,7 +373,7 @@ footer li {
 .legal {
     margin: auto;
     text-align: center;
-    padding: var(--sl) var(sm);
+    padding: var(--sl) var(--sm);
 }
 
 
