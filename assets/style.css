@@ -19,14 +19,14 @@
     --sxl: 3rem;
     --sl: 2rem;
     --sm: 1rem;
-    --ss: 0.5ren;
+    --ss: 0.5rem;
     --sxs: 0.25rem;
 
     /* text-size */
     --txl: 2.3rem;
     --tl: 1.7rem;
     --tm: 1.2rem;
-    --ts: 0.80ren;
+    --ts: 0.80rem;
     --txs: 0.7rem;
 
 }
@@ -65,12 +65,6 @@ h2 {
     padding: var(--sm) 0;
 }
 
-h4 {
-    font-size: var(--ts);
-    padding: var(--ss) 0;
-    text-align: left;
-}
-
 .center {
     margin: auto;
     text-align: center;
@@ -78,6 +72,17 @@ h4 {
 
 .subheading {
     font-size: 1.5rem;
+}
+
+article {
+padding: 0 var(--sm);    
+
+}
+
+article p, a, h4 {
+font-size: 0.95rem;
+padding: var(--ss) 0;
+    text-align: left;
 }
 
 /* Containers & Boxes sizes */
@@ -312,29 +317,31 @@ button a {
 }
 
 .twoboxes {
-    border: 1px solid;
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
-    align-items: center;
-    
+    align-items: start;
+    min-height: 40vh;
+    height: auto;    
    }
 
 .twoboxes img {
-    width: 100%;
+    max-width: 100%;
     padding-bottom: var(--sm);
 }
 
 .left{
-    max-width: 48%;
+    border: 1px solid;
+    
 }
 
 .right{
-    max-width: 48%;
+    border: 1px solid;
+    
      display:flex;
     flex-direction: column;
 
 }
+
 
 /*Footer section */
 footer {
