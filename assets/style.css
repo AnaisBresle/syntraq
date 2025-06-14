@@ -105,18 +105,7 @@ h2 {
     align-items: center;
 }
 
-.threeboxes {
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    padding: var(--sl)
-}
 
-.box {
-    border: 1px solid;
-    text-align: center;
-
-}
 
 /* Text sizes */
 
@@ -277,6 +266,7 @@ button a {
 
 /* Main section */
 
+
 .personas {
     background-color: #d38787;
 }
@@ -285,6 +275,29 @@ button a {
 .howitworks {
      background-color: aquamarine;
 }
+
+.threeboxes {
+    display: flex;
+    justify-content:space-between;
+    padding: var(--sl);
+}
+
+.box {
+    border: 1px solid;
+    text-align: center;
+    width: 30vw;
+    margin: 0 var(--sm);
+    min-height: 28vh;
+    height: auto;
+    padding: var(--sm);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;      
+
+}
+
 
 
 /*Footer section */
