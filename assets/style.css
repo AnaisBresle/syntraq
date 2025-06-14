@@ -369,6 +369,10 @@ a {
 
 }
 
+.arrow {
+    padding-top: var(--sm);
+}
+
 .arrow::after {
     padding-left: 5px;
     content: "\f105";
