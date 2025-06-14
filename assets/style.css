@@ -27,14 +27,14 @@ body {
 --small: 18vw;
 
 /* spacing*/  
---sXl: 3rem;
+--sxl: 3rem;
 --sl: 2rem;
 --sm: 1rem;
 --ss: 0.5ren;
 --sxs: 0.25rem;
 
 /* text-size */  
---tXl: 3rem;
+--txl: 3rem;
 --tl: 2rem;
 --tm:1rem;
 --ts:0.80ren;
@@ -84,6 +84,12 @@ align-items: center;
     font-size: var(--txs);    
 }
 
+.biggercopy {
+    font-size: var(--tm);
+    font-weight: 500;
+    line-height: 1.8;
+    padding: var(--sm)
+}
 
 /* Breathing spacing */
 
@@ -96,7 +102,7 @@ padding-top: var(--sm)
 }
 
 .sxl-spacing-top {
-padding-top: var(--sXl);  
+padding-top: var(--sxl);  
 }
 
 .sm-spacing-side {
@@ -109,6 +115,23 @@ header {
 background-color: var(--primary);
 width: var(--full);
 }
+
+#hero {
+display: block;    
+text-align: center; 
+color: var(--offwhite);
+margin:auto;
+padding: var(--sl) 0
+
+}
+
+#hero h1 {
+ font-size: var(--txl);
+ padding: var(--sl);
+
+ }
+
+
 
 nav { 
 display:flex;
@@ -228,7 +251,7 @@ display: flex;
   justify-content:space-around;
   flex-wrap: wrap;
   align-items: center;
-    
+      
 }
 
 .column {
