@@ -89,10 +89,17 @@ hr {
 border: 1px solid green;
   border-radius: 5px;
     width: 90%;
-    margin: 8px auto;
-   
-    
+    margin: 8px auto;    
 }
+
+.italic{
+    font-style: italic;
+}
+
+.notes {
+    font-size: 0.9rem;
+}
+
 
 /* Containers & Boxes sizes */
 
@@ -348,7 +355,39 @@ footer button {
     margin:0 var(--ss);
 }
 
+/* Forms */
 
+.signup {
+background-color: #48db23;
+padding: var(--sm);
+}
+
+input, textarea, select {
+    min-width: 50%;
+    margin: var(--ss) 0;
+    border:0;
+    border-radius: 5px;
+    padding: var(--ss);
+    background-color: lightgrey;
+    opacity: 0.6;
+    font-family:"Lucida Sans", sans-serif;
+    
+}
+
+input::placeholder, textarea::placeholder, select {
+  font-style: italic;
+  color: #d38787;
+}
+
+textarea {
+    min-height: 80px;
+}
+
+label {
+    font-size: 0.95rem;
+    width: 100%;
+    text-align: left;
+}
 /*Footer section */
 footer {
     background-color: var(--dark);
