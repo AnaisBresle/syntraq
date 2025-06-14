@@ -278,23 +278,26 @@ button a {
 
 .threeboxes {
     display: flex;
-    justify-content:space-between;
+    flex-wrap: wrap;
+    justify-content:space-around;
     padding: var(--sl);
 }
 
 .box {
     border: 1px solid;
     text-align: center;
-    width: 30vw;
-    margin: 0 var(--sm);
+    width: 100%;        
+  max-width: 20vw;     
+  min-width: 15vw;
+    margin:var(--sm);
     min-height: 28vh;
     height: auto;
     padding: var(--sm);
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
     justify-content: center;
-    align-items: center;      
+    align-items: center;  
+    word-wrap: break-word;    
 
 }
 
