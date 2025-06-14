@@ -58,7 +58,7 @@ h1 {
     font-size: var(--txl);
     text-align: center;
     padding: var(--sm) 0;
-}
+    }
 
 h2 {
     font-size: var(--tm);
@@ -313,24 +313,28 @@ button a {
 
 .twoboxes {
     border: 1px solid;
-    text-align: left;
-    width: 100%;
-    padding: var(--sm);
-    margin: 0 5px;
     display: flex;
-    flex-direction: column;
-    justify-content: top;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    word-wrap: break-word;
-}
+    
+   }
 
 .twoboxes img {
     width: 100%;
+    padding-bottom: var(--sm);
 }
 
+.left{
+    max-width: 48%;
+}
 
+.right{
+    max-width: 48%;
+     display:flex;
+    flex-direction: column;
 
-
+}
 
 /*Footer section */
 footer {
@@ -399,10 +403,3 @@ a {
     color: var(--offwhite)
 }
 
-
-
-
-
-
-
-left middle right centerbox form 2boxes
