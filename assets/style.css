@@ -48,6 +48,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 0;
+     margin-bottom: 1rem;
 }
 
 .hidden {
@@ -107,19 +108,16 @@ border: 1px solid green;
 .largebox {
     width: var(--large);
     margin: auto;
-    padding: var(--sl) 0
-}
-
-.boxhalf {
-    width: var(--half);
-}
-
-.boxthird {
-    width: var(--third)
+    padding: var(--sl) 0;
+    gap: var(--md);
 }
 
 .boxquarter {
-    width: var(--quarter)
+  flex: 1 1 var(--quarter);
+}
+
+.boxhalf {
+  flex: 1 1 var(--half);
 }
 
 .smallbox {
@@ -129,8 +127,9 @@ border: 1px solid green;
 
 .flexcontainer {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  align-items: flex-start;
 }
 
 
@@ -282,11 +281,13 @@ form button {
 }
 
 .cta-link {
-    font-weight: 400;
-    padding: 4px;
+    font-weight: 600;
+    padding: var(--ss) var(--sm);
     background-color: #d38787;
     border-radius: 5px;
-    margin-top: 10px;
+    margin-top: var(--ss);
+    color: var(--offwhite);
+    text-align: center;
 
 }
 
@@ -411,8 +412,10 @@ footer li {
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
+    margin-bottom: 1rem;
 
 }
+
 
 .legal {
     margin: auto;
