@@ -261,6 +261,7 @@ button {
     line-height: 1.2;
     display: block;
     width: 100%;
+    
 
 }
 
@@ -277,6 +278,7 @@ form button {
     width: 15%;
     max-width:30%;
     margin: var(--sm) auto;
+    
 }
 
 .cta {
@@ -345,7 +347,7 @@ form button {
 
  }
 
-
+ 
 .insights {
    background-color: #ff7fff; 
 }
@@ -411,6 +413,14 @@ label .select {
     padding: var(--sm) 0;
 }
 
+input[type=email]::placeholder::before{
+    padding-left: 5px;
+    content: "\f105";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    font-size: 1rem;
+    vertical-align: middle;
+}
 
 /*Footer section */
 footer {
