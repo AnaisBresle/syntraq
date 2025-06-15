@@ -48,7 +48,9 @@ body {
     display: flex;
     flex-direction: column;
     padding: 0;
-     margin-bottom: 1rem;
+    max-width: 300px;
+    margin:0;
+   
 }
 
 .hidden {
@@ -112,12 +114,15 @@ border: 1px solid green;
     gap: var(--md);
 }
 
+
 .boxquarter {
   flex: 1 1 var(--quarter);
+  
 }
 
 .boxhalf {
   flex: 1 1 var(--half);
+  
 }
 
 .smallbox {
@@ -240,7 +245,7 @@ nav {
 footer .logo img {
     max-width: 150px;
     height: auto;
-    padding-left: 0;
+    align-self: flex-start;
 
 }
 
@@ -308,13 +313,12 @@ form button {
     flex-wrap: wrap;
     padding: var(--sl);
     justify-content:center;
+    align-items: center;
 }
 
 .threeboxes {
     border: 1px solid;
-    text-align: center;
-    width: 100%;
-    max-width: 300px;
+    width: 25%;
     min-width: 250px;
     margin: var(--sm);
     min-height: 28vh;
@@ -327,6 +331,20 @@ form button {
     word-wrap: break-word;
 
 }
+
+.middlebox {
+    border: 1px solid;
+    width: 45%;
+    margin: var(--sm);
+    min-height: 28vh;
+    height: auto;
+    padding: var(--sm);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+
+ }
+
 
 .insights {
    background-color: #ff7fff; 
@@ -411,9 +429,8 @@ footer li {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    align-items: center;
-    margin-bottom: 1rem;
-
+    align-items:flex-end;
+    
 }
 
 
