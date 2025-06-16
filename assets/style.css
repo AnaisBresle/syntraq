@@ -7,6 +7,9 @@
     --dark: #364545 ;
     --accent: rgb(156, 236, 252);
     --transparency: rgba(156, 236, 252, 0.2);
+    --secondaccent: rgb(252, 162, 177);
+
+
 
     /* width */
     --full: 100vw;
@@ -233,7 +236,7 @@ nav {
     text-align: center;
     color: var(--offwhite);
     margin: auto;
-    background: rgba(88, 162, 242, 0.6);
+    background: rgba(88, 162, 242, 0.8);
     backdrop-filter: blur(8px);
     padding: 4rem 2rem;
     width: var(--full);
@@ -383,16 +386,52 @@ button:hover {
  h2::before {
     display: inline-block;
     padding-right: var(--sm);
-    font-weight: 600;
-    font-size: 1rem;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 100;
+    font-size: 2rem;
     vertical-align: middle;
  }
 
  h2.executives::before {
-content: "\f105";
-    font-family: "Font Awesome 6 Free";
-    font-weight: 600;
+content: "\f441";
+  color: var(--accent);    
  }
+
+  h2.managers::before {
+content: "\f14e";
+  color: var(--primary);   
+   
+ }
+
+  h2.team::before {
+content: "\f075";
+   color: var(--secondaccent); 
+ }
+
+.accentbox {
+  border: 1px solid rgb(156, 236, 252); 
+ }
+
+ .primarybox {
+  border: 1px solid rgb(88, 162, 242); 
+ }
+
+  .secondaccent {
+  border: 1px solid rgb(252, 162, 177); 
+ }
+
+
+h2.one::before,
+h2.two::before,
+h2.three::before {
+  content: "\f007"; 
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900; 
+  display: block;
+  text-align: center; 
+  margin: var(--sm) auto;
+}
+
 
 /* Forms */
 
