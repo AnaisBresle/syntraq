@@ -278,12 +278,12 @@ button {
     font-size: var(--ts);
     text-align: center;
      width: 15%;
-    max-width:30%;
+    max-width:25%;
     margin: var(--sm) auto;
     line-height: 1.2;
     display: block;
     width: 100%;
-    padding: 1rem 2rem;
+    padding: var(--ss) var(--sm);
   cursor: pointer;
 
 }
@@ -497,29 +497,25 @@ color: var(--accent);
 }
 
 
-.cta a {
-    color: var(--offwhite);
-    text-align: center;
-    padding: 0;
-    cursor: pointer;
-}
-
 .cta-link {
     font-weight: 600;
+    font-size: var(--ts);
     padding: var(--ss) var(--sm);
     background-color: var(--primary);
-    border-radius: 5px;
+    border-radius: 8px;
+    border: none;
     margin-top: var(--ss) auto;
     color: var(--offwhite);
     text-align: center;
     display: inline-block; 
+    cursor: pointer;
    
 }
 
 .cta-link:hover {
     background-color: var(--offwhite);
     border-radius: 5px;
-    color: var(--accent);
+    color: var(--dark);
     text-decoration: none;  
 }
 
