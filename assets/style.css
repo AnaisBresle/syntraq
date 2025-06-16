@@ -475,6 +475,12 @@ button:hover {
  .noborder {
     border: none
  }
+
+ .noshadow {
+box-shadow: none;  
+ }
+
+
  .screenshots {
 border: 1px solid rgba(156, 236, 252, 0.7); 
   padding: var(--sm);
