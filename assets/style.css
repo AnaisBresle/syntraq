@@ -210,6 +210,13 @@ border: 1px solid var(--accent);
     gap: var(--md);
 }
 
+.mediumbox {
+width: var(--half);
+    margin: auto;
+    padding: var(--sl) 0;
+    gap: var(--md);
+
+}
 
 .boxquarter {
   flex: 1 1 var(--quarter);
@@ -224,6 +231,7 @@ border: 1px solid var(--accent);
 .smallbox {
     width: var(--quarter);
 }
+
 
 
 .flexcontainer {
