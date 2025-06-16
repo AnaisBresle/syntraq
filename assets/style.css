@@ -383,12 +383,15 @@ button:hover {
  h2::before {
     display: inline-block;
     padding-right: var(--sm);
-    content: "\f105";
-    font-family: "Font Awesome 6 Free";
     font-weight: 600;
     font-size: 1rem;
     vertical-align: middle;
+ }
 
+ h2.executives::before {
+content: "\f105";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
  }
 
 /* Forms */
