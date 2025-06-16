@@ -73,6 +73,57 @@ h2 {
     padding: var(--sm) 0;
 }
 
+ h2::before {
+    display: inline-block;
+    padding-right: var(--sm);
+    font-family: "Font Awesome 6 Free";
+    font-weight: 100;
+    font-size: 2rem;
+    vertical-align: middle;
+ }
+
+ h2.executives::before {
+content: "\f441";
+  color: var(--accent);    
+ }
+
+  h2.managers::before {
+content: "\f14e";
+  color: var(--primary);   
+   
+ }
+
+  h2.team::before {
+content: "\f075";
+   color: var(--secondaccent); 
+ }
+
+ 
+h2.one::before,
+h2.two::before,
+h2.three::before {
+   font-family: "Font Awesome 6 Free";
+  font-weight: 600; 
+  display: block;
+  text-align: center; 
+  margin: var(--sm) auto;
+  color: var(--accent)
+}
+
+
+h2.one::before {
+content: "\f7d9"; 
+}
+
+h2.two::before {
+content: "\e4be"; 
+}
+
+h2.three::before{
+content: "\f0eb"; 
+}
+
+
 p {
     line-height:1.4;
     padding: var(--sm)
@@ -100,6 +151,18 @@ article p, a, h4 {
 font-size: 0.95rem;
 padding: var(--ss) 0;
 text-align: left;
+}
+
+h4::before{
+display: inline-block;
+    padding-right: var(--sm);
+    content: "\f00c";
+  color: var(--accent); 
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    font-size: 1.5rem;
+    vertical-align: middle;    
+
 }
 
 hr {
@@ -245,12 +308,12 @@ nav {
 }
 
 #hero h1 {
-    font-size: 3.5rem;
+    font-size: 2.8rem;
     padding: var(--sl);
 
 }
 
-/* Logo */
+/* Logo & images */
 .logo {
     padding-left: 0;
 }
@@ -268,6 +331,17 @@ footer .logo img {
 
 }
 
+.twoboxes img {
+    max-width: 100%;
+    padding-bottom: var(--sm);
+}
+
+
+
+.screenshots img {
+    max-width: 100%;
+    padding-bottom: var(--sm);
+}
 
 /* Buttons */
 button {
@@ -348,10 +422,6 @@ button:hover {
      
    }
 
-.twoboxes img {
-    max-width: 100%;
-    padding-bottom: var(--sm);
-}
 
 .left, .right{
      display:flex;
@@ -359,7 +429,7 @@ button:hover {
     justify-content: start;
     align-items: center;
     min-height: 28vh;
-    max-width: 400px;
+    max-width: 500px;
     min-width: 250px;
     margin:0 var(--ss);
 }
@@ -377,36 +447,23 @@ button:hover {
 .inner-boxes {
   background: rgba(255, 255, 255, 0.1);   
   color: var(--offwhite);
-  border: 1px solid rgba(255, 255, 255, 0.4); 
+  border: 1px solid rgba(156, 236, 252, 0.7); 
   padding: var(--sm);
   margin:130px auto;
   border-radius: 8px;
  }
 
- h2::before {
-    display: inline-block;
-    padding-right: var(--sm);
-    font-family: "Font Awesome 6 Free";
-    font-weight: 100;
-    font-size: 2rem;
-    vertical-align: middle;
+ .noborder {
+    border: none
  }
+ .screenshots {
+border: 1px solid rgba(156, 236, 252, 0.7); 
+  padding: var(--sm);
+  border-radius: 8px;
+  width: 100%;
+  margin: auto;
+}
 
- h2.executives::before {
-content: "\f441";
-  color: var(--accent);    
- }
-
-  h2.managers::before {
-content: "\f14e";
-  color: var(--primary);   
-   
- }
-
-  h2.team::before {
-content: "\f075";
-   color: var(--secondaccent); 
- }
 
 .accentbox {
   border: 1px solid rgb(156, 236, 252); 
@@ -420,17 +477,6 @@ content: "\f075";
   border: 1px solid rgb(252, 162, 177); 
  }
 
-
-h2.one::before,
-h2.two::before,
-h2.three::before {
-  content: "\f007"; 
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900; 
-  display: block;
-  text-align: center; 
-  margin: var(--sm) auto;
-}
 
 
 /* Forms */
