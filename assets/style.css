@@ -156,7 +156,7 @@ text-align: left;
 h4::before{
 display: inline-block;
     padding-right: var(--sm);
-    content: "\f00c";
+    content: "\2b";
   color: var(--accent); 
     font-family: "Font Awesome 6 Free";
     font-weight: 600;
@@ -164,6 +164,25 @@ display: inline-block;
     vertical-align: middle;    
 
 }
+
+.left li::before{
+display: inline-block;
+    padding-right: var(--sm);
+    content: "\f00c";
+  color: var(--secondaccent); 
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    font-size: 0.8rem;
+    vertical-align: middle;    
+
+}
+
+.left ul{ 
+    list-style: none;
+}
+
+
+
 
 hr {
 border: 1px solid var(--accent);
