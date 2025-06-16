@@ -3,7 +3,7 @@
     /* Colour palette */
     --primary: rgb(88, 162, 242);
     --secondary: #1a2121;
-    --offwhite: #f1fefe;
+    --offwhite: rgb(241, 254, 254);
     --dark: #364545 ;
     --accent: rgb(156, 236, 252);
     --transparency: rgba(156, 236, 252, 0.2);
@@ -219,6 +219,7 @@ nav {
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: var(--sxs);
+    margin-right: var(--sxl);
 
 }
 
@@ -398,8 +399,9 @@ background-color:  rgba(88,162,242, 0.7);
   color: var(--offwhite); 
 padding: var(--sm);
 
-
 }
+
+
 
 input, textarea, select {
     min-width: 50%;
@@ -422,14 +424,12 @@ textarea {
     min-height: 80px;
 }
 
+
 label.select {
     font-size: 0.95rem;
-    width: 100%;
-    text-align: left;
-    margin-left: ;
-    padding: var(--sm) 0;
+    margin: var(--ss);
     display: block;
-   
+   padding-left: 0;
 }
 
 /*Footer section */
@@ -467,13 +467,35 @@ footer li {
 a {
     text-decoration: none;
     padding: var(--sm) 0;
-    color: var(--accent);
+    color: var(--offwhite);
     cursor: pointer;
+  
+}
+
+a:hover {
+text-decoration:underline;
+color: var(--accent);
+
+}
+
+.topnav li a:hover {
+    border-radius:1rem ;
+    background: rgba(241, 254, 254, 0.1);
+    backdrop-filter: blur(8px);
+    padding: var(--sm);
+    border: 1px solid var(--accent);
 
 }
 
 .arrow {
     padding-top: var(--sm);
+    transition: all 0.4s ease;
+
+}
+
+.arrow:hover {
+    transform: rotate(45deg);
+
 }
 
 .arrow::after {
