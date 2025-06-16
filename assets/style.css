@@ -484,6 +484,7 @@ color: var(--accent);
     backdrop-filter: blur(8px);
     padding: var(--sm);
     border: 1px solid var(--accent);
+    text-decoration: none;
 
 }
 
@@ -506,7 +507,7 @@ color: var(--accent);
 }
 
 .arrow:hover::after {
-    transform: rotate(90deg);
+    transform: translateX(10px);
 
 }
 
