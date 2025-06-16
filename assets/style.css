@@ -270,13 +270,16 @@ footer .logo img {
 
 /* Buttons */
 button {
-    background: var(--accent);
+    background: var(--dark);
     border-radius: 8px;
     border: none;
-   color: var(--dark); 
+   color: var(--offwhite); 
     font-weight: 600;
     font-size: var(--ts);
     text-align: center;
+     width: 15%;
+    max-width:30%;
+    margin: var(--sm) auto;
     line-height: 1.2;
     display: block;
     width: 100%;
@@ -285,40 +288,11 @@ button {
 
 }
 
-
-nav button,
-footer button {
-    width: auto;
-    max-width: 200px;
-    margin-left: 2%;
-
+button:hover {
+    background: var(--offwhite);
+    color:var(--dark) ;
 }
 
-form button {
-    width: 15%;
-    max-width:30%;
-    margin: var(--sm) auto;
-    
-}
-
-.cta {
-    background-color: var(--primary);
-    text-align: center;
-    margin-top: var(--sm); 
-
-}
-
-.cta-link {
-    font-weight: 600;
-    padding: var(--ss) var(--sm);
-    background-color: var(--primary);
-    border-radius: 5px;
-    margin-top: var(--ss) auto;
-    color: var(--offwhite);
-    text-align: center;
-    display: inline-block; 
-   
-}
 
 /* Main section */
 
@@ -528,6 +502,25 @@ color: var(--accent);
     text-align: center;
     padding: 0;
     cursor: pointer;
+}
+
+.cta-link {
+    font-weight: 600;
+    padding: var(--ss) var(--sm);
+    background-color: var(--primary);
+    border-radius: 5px;
+    margin-top: var(--ss) auto;
+    color: var(--offwhite);
+    text-align: center;
+    display: inline-block; 
+   
+}
+
+.cta-link:hover {
+    background-color: var(--offwhite);
+    border-radius: 5px;
+    color: var(--accent);
+    text-decoration: none;  
 }
 
 .legal a {
