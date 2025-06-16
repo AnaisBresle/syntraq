@@ -1,11 +1,12 @@
 :root {
 
     /* Colour palette */
-    --primary: rgb(232, 23, 23);
-    --secondary: #48db23;
-    --offwhite: #fefefe;
-    --dark: #1d1c1c;
-    --accent: purple;
+    --primary: rgb(88, 162, 242);
+    --secondary: #1a2121;
+    --offwhite: #f1fefe;
+    --dark: #364545 ;
+    --accent: rgb(156, 236, 252);
+    --transparency: rgba(156, 236, 252, 0.2);
 
     /* width */
     --full: 100vw;
@@ -23,8 +24,8 @@
     --sxs: 0.25rem;
 
     /* text-size */
-    --txl: 2.3rem;
-    --tl: 1.7rem;
+    --txl: 2rem;
+    --tl: 1.4rem;
     --tm: 1.2rem;
     --ts: 0.80rem;
     --txs: 0.7rem;
@@ -40,6 +41,7 @@
 
 body {
     font-family: "Lucida Sans", sans-serif;
+    background-color: var(--secondary) ;
 }
 
 /* General */
@@ -72,6 +74,11 @@ p {
     line-height:1.4;
     padding: var(--sm)
 }
+
+.threeboxes p {
+    padding-left: 0;
+}
+
 .center {
     margin: auto;
     text-align: center;
@@ -93,7 +100,7 @@ text-align: left;
 }
 
 hr {
-border: 1px solid green;
+border: 1px solid var(--accent);
   border-radius: 5px;
     width: 90%;
     margin: 8px auto;    
@@ -182,7 +189,7 @@ border: 1px solid green;
 /* Header Section */
 
 header {
-    background-color: var(--primary);
+    background-color: var(--secondary);
     width: var(--full);
 }
 
@@ -194,9 +201,9 @@ nav {
     align-items: center;
     position: sticky;
     top: 0;
-    padding: var(--sm);
-    color: var(--offwhite);
-
+    padding: var(--sl);
+    color: var(--primary);
+   
 }
 
 
@@ -218,7 +225,6 @@ nav {
 
 .topnav li {
     list-style: none;
-    background-color: aqua;
     padding: var(--ss)
 }
 
@@ -227,6 +233,13 @@ nav {
     text-align: center;
     color: var(--offwhite);
     margin: auto;
+    background: rgba(88, 162, 242, 0.6);
+    backdrop-filter: blur(8px);
+    padding: 4rem 2rem;
+    width: var(--ful
+    );
+   
+    
 }
 
 #hero h1 {
@@ -256,16 +269,18 @@ footer .logo img {
 
 /* Buttons */
 button {
-    border-radius: 5%;
-    border: 0;
-    padding: var(--sm);
+    background: var(--accent);
+    border-radius: 8px;
+    border: none;
+   color: var(--dark); 
     font-weight: 600;
     font-size: var(--ts);
     text-align: center;
     line-height: 1.2;
     display: block;
     width: 100%;
-    
+    padding: 1rem 2rem;
+  cursor: pointer;
 
 }
 
@@ -286,44 +301,37 @@ form button {
 }
 
 .cta {
-    background-color: var(--secondary);
+    background-color: var(--primary);
     text-align: center;
+    margin-top: var(--sm); 
 
 }
 
 .cta-link {
     font-weight: 600;
     padding: var(--ss) var(--sm);
-    background-color: #d38787;
+    background-color: var(--primary);
     border-radius: 5px;
-    margin-top: var(--ss);
+    margin-top: var(--ss) auto;
     color: var(--offwhite);
     text-align: center;
-
+    display: inline-block; 
+   
 }
 
 /* Main section */
 
 
-.personas {
-    background-color: #d38787;
-}
-
-
-.howitworks {
-    background-color: aquamarine;
-}
 
 .boxes {
     display: flex;
     flex-wrap: wrap;
-    padding: var(--sl);
+    padding: var(--sm);
     justify-content:center;
     align-items: center;
 }
 
 .threeboxes {
-    border: 1px solid;
     width: 25%;
     min-width: 250px;
     margin: var(--sm);
@@ -333,13 +341,12 @@ form button {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     word-wrap: break-word;
 
 }
 
 .middlebox {
-    border: 1px solid;
     width: 45%;
     margin: var(--sm);
     min-height: 28vh;
@@ -347,8 +354,8 @@ form button {
     padding: var(--sm);
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start; 
-
+    justify-content: flex-start;
+    
  }
 
  
@@ -371,8 +378,7 @@ form button {
 }
 
 .left, .right{
-    border: 1px solid;
-    display:flex;
+     display:flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
@@ -385,8 +391,14 @@ form button {
 /* Forms */
 
 .signup {
-background-color: #23cfdb;
+background-color:  rgba(88,162,242, 0.7);
+
+  backdrop-filter: blur(4px);          
+  border-radius: 1rem;
+  color: var(--offwhite); 
 padding: var(--sm);
+
+
 }
 
 input, textarea, select {
@@ -395,7 +407,7 @@ input, textarea, select {
     border:0;
     border-radius: 5px;
     padding: var(--ss);
-    background-color: lightgrey;
+    background-color: var(--offwhite);
     opacity: 0.6;
     font-family:"Lucida Sans", sans-serif;
     
@@ -403,23 +415,25 @@ input, textarea, select {
 
 input::placeholder, textarea::placeholder, select {
   font-style: italic;
-  color: #d38787;
+  color: var(--dark);
 }
 
 textarea {
     min-height: 80px;
 }
 
-label .select {
+label.select {
     font-size: 0.95rem;
     width: 100%;
     text-align: left;
+    margin-left: ;
     padding: var(--sm) 0;
+    display: block;
+   
 }
 
 /*Footer section */
 footer {
-    background-color: var(--dark);
     color: var(--offwhite);
     width: var(--full);
 
@@ -427,6 +441,7 @@ footer {
 
 footer li {
     list-style: none;
+    padding-bottom: var(--ss);
 
 }
 
@@ -434,7 +449,7 @@ footer li {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    align-items:flex-end;
+    align-items:center;
     
 }
 
@@ -442,7 +457,7 @@ footer li {
 .legal {
     margin: auto;
     text-align: center;
-    padding: var(--sl) var(--sm);
+    padding: var(--ss) var(--ss);
 }
 
 
@@ -452,6 +467,8 @@ footer li {
 a {
     text-decoration: none;
     padding: var(--sm) 0;
+    color: var(--accent);
+    cursor: pointer;
 
 }
 
@@ -472,12 +489,20 @@ a {
 .menu a {
     color: var(--offwhite);
     font-size: var(--ts);
+    cursor: pointer;
+    
 }
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
 
 .cta a {
     color: var(--offwhite);
     text-align: center;
     padding: 0;
+    cursor: pointer;
 }
 
 .legal a {
