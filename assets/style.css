@@ -489,22 +489,24 @@ color: var(--accent);
 
 .arrow {
     padding-top: var(--sm);
-    transition: all 0.4s ease;
+   
 
 }
 
 .arrow::after {
-    padding-left: 5px;
+    display: inline-block;
+    padding-left: var(--ss);
     content: "\f105";
     font-family: "Font Awesome 6 Free";
     font-weight: 600;
     font-size: 1rem;
     vertical-align: middle;
+     transition: all 0.3s ease;
 
 }
 
-.arrow::after:hover {
-    transform: rotate(45deg);
+.arrow:hover::after {
+    transform: rotate(90deg);
 
 }
 
