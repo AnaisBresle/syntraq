@@ -545,10 +545,10 @@ border: 1px solid rgba(156, 236, 252, 0.7);
 
 .signup {
 background-color:  rgba(88,162,242, 0.7);
-         
+   width:80%;      
   border-radius: 8px;
   color: var(--offwhite); 
-padding: var(--sm);
+padding: var(--sl);
 
 }
 
