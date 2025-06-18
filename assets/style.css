@@ -4,7 +4,7 @@
     --primary: rgb(88, 162, 242);
     --secondary: #1a2121;
     --offwhite: rgb(241, 254, 254);
-    --dark: #364545 ;
+    --dark: #364545;
     --accent: rgb(156, 236, 252);
     --transparency: rgba(156, 236, 252, 0.2);
     --secondaccent: rgb(252, 162, 177);
@@ -44,7 +44,7 @@
 
 body {
     font-family: "Lucida Sans", sans-serif;
-    background-color: var(--secondary) ;
+    background-color: var(--secondary);
 }
 
 /* General */
@@ -54,8 +54,8 @@ body {
     flex-direction: column;
     padding: 0;
     max-width: 300px;
-    margin:0;
-   
+    margin: 0;
+
 }
 
 .hidden {
@@ -66,66 +66,66 @@ h1 {
     font-size: var(--txl);
     text-align: center;
     padding: var(--sm) 0;
-    }
+}
 
 h2 {
     font-size: var(--tm);
     padding: var(--sm) 0;
 }
 
- h2::before {
+h2::before {
     display: inline-block;
     padding-right: var(--sm);
     font-family: "Font Awesome 6 Free";
     font-weight: 100;
     font-size: 2rem;
     vertical-align: middle;
- }
+}
 
- h2.executives::before {
-content: "\f441";
-  color: var(--accent);    
- }
+h2.executives::before {
+    content: "\f441";
+    color: var(--accent);
+}
 
-  h2.managers::before {
-content: "\f14e";
-  color: var(--primary);   
-   
- }
+h2.managers::before {
+    content: "\f14e";
+    color: var(--primary);
 
-  h2.team::before {
-content: "\f075";
-   color: var(--secondaccent); 
- }
+}
 
- 
+h2.team::before {
+    content: "\f075";
+    color: var(--secondaccent);
+}
+
+
 h2.one::before,
 h2.two::before,
 h2.three::before {
-   font-family: "Font Awesome 6 Free";
-  font-weight: 600; 
-  display: block;
-  text-align: center; 
-  margin: var(--sm) auto;
-  color: var(--accent)
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    display: block;
+    text-align: center;
+    margin: var(--sm) auto;
+    color: var(--accent)
 }
 
 
 h2.one::before {
-content: "\f7d9"; 
+    content: "\f7d9";
 }
 
 h2.two::before {
-content: "\e4be"; 
+    content: "\e4be";
 }
 
-h2.three::before{
-content: "\f0eb"; 
+h2.three::before {
+    content: "\f0eb";
 }
 
 
 p {
-    line-height:1.4;
+    line-height: 1.4;
     padding: var(--sm)
 }
 
@@ -143,52 +143,54 @@ p {
 }
 
 article {
-padding: 0 var(--sm);    
+    padding: 0 var(--sm);
 
 }
 
-article p, a, h4 {
-font-size: 0.95rem;
-padding: var(--ss) 0;
-text-align: left;
+article p,
+a,
+h4 {
+    font-size: 0.95rem;
+    padding: var(--ss) 0;
+    text-align: left;
 }
 
-h4::before{
-display: inline-block;
+h4::before {
+    display: inline-block;
     padding-right: var(--sm);
     content: "\2b";
-  color: var(--accent); 
+    color: var(--accent);
     font-family: "Font Awesome 6 Free";
     font-weight: 600;
     font-size: 1.5rem;
-    vertical-align: middle;    
+    vertical-align: middle;
 }
 
-h4.nb1::before{
-content:"1";
+h4.nb1::before {
+    content: "1";
 }
 
-h4.nb2::before{
-content:"2";
+h4.nb2::before {
+    content: "2";
 }
 
-h4.nb3::before{
-content:"3";
+h4.nb3::before {
+    content: "3";
 }
 
-.left li::before{
-display: inline-block;
+.left li::before {
+    display: inline-block;
     padding-right: var(--sm);
     content: "\f00c";
-  color: var(--secondaccent); 
+    color: var(--secondaccent);
     font-family: "Font Awesome 6 Free";
     font-weight: 600;
     font-size: 0.8rem;
-    vertical-align: middle;    
+    vertical-align: middle;
 
 }
 
-.left ul{ 
+.left ul {
     list-style: none;
 }
 
@@ -196,13 +198,13 @@ display: inline-block;
 
 
 hr {
-border: 1px solid var(--accent);
-  border-radius: 5px;
+    border: 1px solid var(--accent);
+    border-radius: 5px;
     width: 90%;
-    margin: 8px auto;    
+    margin: 8px auto;
 }
 
-.italic{
+.italic {
     font-style: italic;
 }
 
@@ -222,7 +224,7 @@ border: 1px solid var(--accent);
 }
 
 .mediumbox {
-width: var(--half);
+    width: var(--half);
     margin: auto;
     padding: var(--sl) 0;
     gap: var(--md);
@@ -230,13 +232,13 @@ width: var(--half);
 }
 
 .boxquarter {
-  flex: 1 1 var(--quarter);
-  
+    flex: 1 1 var(--quarter);
+
 }
 
 .boxhalf {
-  flex: 1 1 var(--half);
-  
+    flex: 1 1 var(--half);
+
 }
 
 .smallbox {
@@ -249,7 +251,7 @@ width: var(--half);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  align-items: flex-start;
+    align-items: flex-start;
 }
 
 
@@ -306,7 +308,7 @@ nav {
     top: 0;
     padding: var(--sl);
     color: var(--primary);
-   
+
 }
 
 
@@ -341,8 +343,8 @@ nav {
     backdrop-filter: blur(8px);
     padding: 4rem 2rem;
     width: var(--full);
-   
-    
+
+
 }
 
 #hero h1 {
@@ -386,24 +388,23 @@ button {
     background: var(--dark);
     border-radius: 8px;
     border: none;
-   color: var(--offwhite); 
+    color: var(--offwhite);
     font-weight: 600;
     font-size: var(--ts);
     text-align: center;
-     width: 15%;
-    max-width:25%;
+    max-width: 25%;
     margin: var(--sm) auto;
     line-height: 1.2;
     display: block;
-    width: 100%;
+
     padding: var(--ss) var(--sm);
-  cursor: pointer;
+    cursor: pointer;
 
 }
 
 button:hover {
     background: var(--offwhite);
-    color:var(--dark) ;
+    color: var(--dark);
 }
 
 
@@ -415,8 +416,9 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     padding: var(--sm);
-    justify-content:center;
+    justify-content: center;
     align-items: center;
+
 }
 
 .threeboxes {
@@ -431,6 +433,7 @@ button:hover {
     justify-content: center;
     align-items: flex-start;
     word-wrap: break-word;
+    overflow-x: auto;
 
 }
 
@@ -443,12 +446,13 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    
- }
+    overflow-x: auto;
 
- 
+}
+
+
 .insights {
-   background-color: #ff7fff; 
+    background-color: #ff7fff;
 }
 
 .twoboxes {
@@ -457,86 +461,89 @@ button:hover {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-     
-   }
+    overflow-x: auto;
+
+}
 
 
-.left, .right{
-     display:flex;
+.left,
+.right {
+    display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
     min-height: 28vh;
     max-width: 500px;
     min-width: 250px;
-    margin:0 var(--ss);
+    margin: 0 var(--ss);
+    overflow-x: auto;
 }
 
 .section-box {
-  background: rgba(26, 33, 33, 0.7);   
-  color: var(--offwhite);
-  border: 1px solid rgba(255, 255, 255, 0.4); 
-  box-shadow: 0 4px 12px rgba(88,162,242, 0.3);  
-  padding: var(--sm);
-  margin:130px auto;
-  border-radius: 8px;
+    background: rgba(26, 33, 33, 0.7);
+    color: var(--offwhite);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 12px rgba(88, 162, 242, 0.3);
+    padding: var(--sm);
+    margin: 130px auto;
+    border-radius: 8px;
 }
 
 .inner-boxes {
-  background: rgba(255, 255, 255, 0.1);   
-  color: var(--offwhite);
-  border: 1px solid rgba(156, 236, 252, 0.7); 
-  padding: var(--sm);
-  margin:130px auto;
-  border-radius: 8px;
- }
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--offwhite);
+    border: 1px solid rgba(156, 236, 252, 0.7);
+    padding: var(--sm);
+    margin: 130px auto;
+    border-radius: 8px;
+}
 
- .noborder {
+.noborder {
     border: none
- }
+}
 
- .noshadow {
-box-shadow: none;  
- }
+.noshadow {
+    box-shadow: none;
+}
 
 
- .screenshots {
-border: 1px solid rgba(156, 236, 252, 0.7); 
-  padding: var(--sm);
-  border-radius: 8px;
-  width: 100%;
-  margin: auto;
+.screenshots {
+    border: 1px solid rgba(156, 236, 252, 0.7);
+    padding: var(--sm);
+    border-radius: 8px;
+    width: 100%;
+    margin: auto;
 }
 
 
 .accentbox {
-  border: 1px solid rgb(156, 236, 252); 
- }
+    border: 1px solid rgb(156, 236, 252);
+}
 
- .primarybox {
-  border: 1px solid rgb(88, 162, 242); 
- }
+.primarybox {
+    border: 1px solid rgb(88, 162, 242);
+}
 
-  .secondaccent {
-  border: 1px solid rgb(252, 162, 177); 
- }
+.secondaccent {
+    border: 1px solid rgb(252, 162, 177);
+}
 
 
 .logobox ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  padding: 0;
-  margin: 0;
-  justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
 }
 
 .logobox ul li {
-  list-style: none;
-  display: inline-block;
-  padding: var(--sm) 1rem;
-  border-radius: 8px;
-  border: solid 1px;
+    list-style: none;
+    display: inline-block;
+    padding: var(--sm) 1rem;
+    border-radius: 8px;
+    border: solid 1px;
 
 }
 
@@ -544,31 +551,35 @@ border: 1px solid rgba(156, 236, 252, 0.7);
 /* Forms */
 
 .signup {
-background-color:  rgba(88,162,242, 0.7);
-   width:80%;      
-  border-radius: 8px;
-  color: var(--offwhite); 
-padding: var(--sl);
+    background-color: rgba(88, 162, 242, 0.7);
+    width: 80%;
+    border-radius: 8px;
+    color: var(--offwhite);
+    padding: var(--sl);
 
 }
 
 
 
-input, textarea, select {
+input,
+textarea,
+select {
     min-width: 50%;
     margin: var(--ss) 0;
-    border:0;
+    border: 0;
     border-radius: 5px;
     padding: var(--ss);
     background-color: var(--offwhite);
     opacity: 0.6;
-    font-family:"Lucida Sans", sans-serif;
-    
+    font-family: "Lucida Sans", sans-serif;
+
 }
 
-input::placeholder, textarea::placeholder, select {
-  font-style: italic;
-  color: var(--dark);
+input::placeholder,
+textarea::placeholder,
+select {
+    font-style: italic;
+    color: var(--dark);
 }
 
 textarea {
@@ -580,7 +591,7 @@ label.select {
     font-size: 0.95rem;
     margin: var(--ss);
     display: block;
-   padding-left: 0;
+    padding-left: 0;
 }
 
 /*Footer section */
@@ -600,8 +611,8 @@ footer li {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    align-items:center;
-    
+    align-items: center;
+
 }
 
 
@@ -620,17 +631,17 @@ a {
     padding: var(--sm) 0;
     color: var(--offwhite);
     cursor: pointer;
-  
+
 }
 
 a:hover {
-text-decoration:underline;
-color: var(--accent);
+    text-decoration: underline;
+    color: var(--accent);
 
 }
 
 .topnav li a:hover {
-    border-radius:1rem ;
+    border-radius: 1rem;
     background: rgba(241, 254, 254, 0.1);
     backdrop-filter: blur(8px);
     padding: var(--sm);
@@ -641,7 +652,7 @@ color: var(--accent);
 
 .arrow {
     padding-top: var(--sm);
-   
+
 
 }
 
@@ -653,7 +664,7 @@ color: var(--accent);
     font-weight: 600;
     font-size: 1rem;
     vertical-align: middle;
-     transition: all 0.3s ease;
+    transition: all 0.3s ease;
 
 }
 
@@ -666,11 +677,11 @@ color: var(--accent);
     color: var(--offwhite);
     font-size: var(--ts);
     cursor: pointer;
-    
+
 }
 
 .menu a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 
@@ -684,20 +695,19 @@ color: var(--accent);
     margin-top: var(--ss) auto;
     color: var(--offwhite);
     text-align: center;
-    display: inline-block; 
+    display: inline-block;
     cursor: pointer;
-   
+
 }
 
 .cta-link:hover {
     background-color: var(--offwhite);
     border-radius: 5px;
     color: var(--dark);
-    text-decoration: none;  
+    text-decoration: none;
 }
 
 .legal a {
     text-decoration: underline;
     color: var(--offwhite)
 }
-
