@@ -162,7 +162,18 @@ display: inline-block;
     font-weight: 600;
     font-size: 1.5rem;
     vertical-align: middle;    
+}
 
+h4.nb1::before{
+content:"1";
+}
+
+h4.nb2::before{
+content:"2";
+}
+
+h4.nb3::before{
+content:"3";
 }
 
 .left li::before{
@@ -509,6 +520,7 @@ border: 1px solid rgba(156, 236, 252, 0.7);
   .secondaccent {
   border: 1px solid rgb(252, 162, 177); 
  }
+
 
 
 
